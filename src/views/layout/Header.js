@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header className="Header">
+        <header className="w-12/12">
             <div className="logo"></div>
         </header>
     );
