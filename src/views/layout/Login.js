@@ -3,7 +3,7 @@ import logo from '../../graphs_logo.png'
 function Login () {
 
     return (
-        <div className='flex align-center'>
+        <div className='flex justify-center'>
             <img src={logo} alt="logo" />
             <h2>Anyone like statistick, but everyone need it.</h2>
 
