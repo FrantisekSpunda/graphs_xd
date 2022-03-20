@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "tailwindcss src/input.css -o src/tailwind.css",
-    "watch:css": "tailwindcss -w src/input.css -o src/tilwind.css"
+    "watch:css": "tailwindcss -w src/input.css -o src/tailwind.css"
   },
   "eslintConfig": {
     "extends": [
