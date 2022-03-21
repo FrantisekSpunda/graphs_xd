@@ -6,12 +6,9 @@ function Header() {
         <header className="w-full h-16 p-3 border-b border-gray-300 flex justify-between">
             <img src={logo} alt="logo" className='h-full' />
 
-            <NavLink to='login' className={({ isActive }) => isActive && "underline"}>
-                <p className='text-base flex items-center'>Login</p>
-            </NavLink>
-            <NavLink to='account' className={({ isActive }) => isActive && "underline"}>
-                <p className='text-base flex items-center'>frantisek.spunda</p>
-            </NavLink>
+            <NavLink to='register' className={({ isActive }) => isActive && "underline"}>Register</NavLink>
+            <NavLink to='login' className={({ isActive }) => isActive && "underline"}>Login</NavLink>
+            <NavLink to='account' className={({ isActive }) => isActive && "underline"}>frantisek.spunda</NavLink>
         </header>
     );
   }
