@@ -1,4 +1,4 @@
-function Login () {
+function CreateGraph () {
 
     return (
         <div className='flex flex-col items-center justify-center h-screen'>
@@ -7,4 +7,4 @@ function Login () {
     )
 }
 
-export default Login
+export default CreateGraph
