@@ -485,10 +485,6 @@ html {
   margin-bottom: 8rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -517,28 +513,16 @@ html {
   width: 50%;
 }
 
-.w-1\/5 {
-  width: 20%;
-}
-
 .w-3\/4 {
   width: 75%;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .flex-col {
@@ -591,10 +575,6 @@ html {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.p-24 {
-  padding: 6rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -607,11 +587,6 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-2 {
