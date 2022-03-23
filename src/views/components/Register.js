@@ -1,5 +1,5 @@
-import logo from '../../assets/images/logo.svg'
-import register from '../../assets/images/register.svg'
+import logo from '../../assets/images/logo-512.png'
+import register from '../../assets/images/register.png'
 
 
 function Register () {
