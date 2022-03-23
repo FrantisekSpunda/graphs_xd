@@ -3,6 +3,20 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontSize: {
+      xs: '.75rem', // 12px
+      sm: '.875rem', // 14px
+      tiny: '.875rem',
+      base: '1rem', // 16px
+      lg: '1.125rem',
+      xl: '1.25rem', // 18px
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
+    },
     fontFamily: {
       colors: {
         white: '#FFFFFF',

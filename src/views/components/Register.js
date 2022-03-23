@@ -1,4 +1,5 @@
-import logo from '../../graphs_logo.png'
+import logo from '../../assets/images/logo.svg'
+import register from '../../assets/images/register.svg'
 
 
 function Register () {
@@ -8,6 +9,7 @@ function Register () {
             <img src={logo} alt="logo" className='w-3/4 mb-5' />
             <h2 className='mb-32'>Anyone like statistick, but everyone need it.</h2>
 
+            <img src={register} alt="register" />
             <form action="" className="flex flex-col w-1/5">
                 <input className='p-2 rounded border' type="text" name="username" placeholder="Username" />
                 <input className='p-2 rounded border' type="email" name="email" placeholder="Email" />

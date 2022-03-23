@@ -14,7 +14,7 @@ import './tailwind.css';
 
 const App = () => (
     <Router>
-      <div className="App">
+      <div className="App text-sm">
         <Routes>
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
