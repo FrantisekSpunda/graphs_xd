@@ -1,4 +1,4 @@
-import Header from "./views/core/Header";
+import Navbar from "./views/core/Navbar";
 
 import Login from "./views/core/Login";
 import Register from "./views/core/Register";
@@ -26,14 +26,15 @@ const App = () => (
 
 const UserContainer = () => (
   <>
-  <Header />
-  <Routes>
-    <Route path="create-graph" element={<CreateGraph />} />
-    <Route path="your-graphs" element={<YourGraphs />} />
+  <Navbar>
+    <Routes>
+      <Route path="create-graph" element={<CreateGraph />} />
+      <Route path="your-graphs" element={<YourGraphs />} />
 
-    <Route path="account" element={<Account />} />
-    <Route path="account-settings" element={<AccountSettings />} />
-  </Routes>
+      <Route path="account" element={<Account />} />
+      <Route path="account-settings" element={<AccountSettings />} />
+    </Routes>
+  </Navbar>
   </>
 )
 

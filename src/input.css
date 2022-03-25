@@ -4,7 +4,6 @@
 
 @layer base {
     html {
-      font-family: Poppins, system-ui, sans-serif;
       @apply text-[#575757]
     }
   }

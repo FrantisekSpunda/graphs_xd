@@ -18,21 +18,21 @@ module.exports = {
       '7xl': '5rem',
     },
     fontFamily: {
-      colors: {
-        white: '#FFFFFF',
-        grey: {
-          100: '#F0F0F0',
-          300: '#C4C4C4',
-          900: '#575757'
-        },
-        orage: {
-          300: '#FFBF75',
-          500: '#FFA24B',
-          900: '#D7562E'
-        },
-        black: '#000000'
-      },
       sans: ['Poppins', ...defaultTheme.fontFamily.sans]
+    },
+    colors: {
+      white: '#FFFFFF',
+      grey: {
+        100: '#E8E8E8',
+        300: '#C4C4C4',
+        900: '#575757'
+      },
+      orage: {
+        300: '#FFBF75',
+        500: '#FFA24B',
+        900: '#D7562E'
+      },
+      black: '#000000'
     }
   },
   plugins: [],

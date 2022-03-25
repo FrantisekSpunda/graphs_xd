@@ -13,7 +13,7 @@ const Input = ({type, name, className, placeholder, children}) => {
             >
                 <>
                     { children }
-                    <input className='font-sans text-sm p-2 rounded-md border-0 bg-gray-100 border outline-none w-full' type={type} name={name} placeholder={placeholder} />
+                    <input className='font-sans font-semibold text-sm p-2 rounded-md border-0 bg-gray-100 outline-none w-full text-gray-900' type={type} name={name} placeholder={placeholder} />
                 </>
             </Anime>
         </div>
