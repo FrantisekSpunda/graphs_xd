@@ -520,21 +520,17 @@ html {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-16 {
-  height: 4rem;
+.h-max {
+  height: -webkit-max-content;
+  height: max-content;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-max {
-  height: -webkit-max-content;
-  height: max-content;
+.h-16 {
+  height: 4rem;
 }
 
 .w-full {
@@ -602,6 +598,11 @@ html {
   padding: 0.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -610,11 +611,6 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pt-24 {
@@ -633,12 +629,12 @@ html {
   font-weight: 600;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .underline {

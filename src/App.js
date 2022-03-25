@@ -26,7 +26,7 @@ const App = () => (
 
 const UserContainer = () => (
   <>
-  <Navbar>
+  <Navbar />
     <Routes>
       <Route path="create-graph" element={<CreateGraph />} />
       <Route path="your-graphs" element={<YourGraphs />} />
@@ -34,7 +34,6 @@ const UserContainer = () => (
       <Route path="account" element={<Account />} />
       <Route path="account-settings" element={<AccountSettings />} />
     </Routes>
-  </Navbar>
   </>
 )
 
