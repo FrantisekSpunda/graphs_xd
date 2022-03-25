@@ -1,13 +1,13 @@
-import Header from "./views/components/Header";
+import Header from "./views/core/Header";
 
-import Login from "./views/components/Login";
-import Register from "./views/components/Register";
+import Login from "./views/core/Login";
+import Register from "./views/core/Register";
 
-import CreateGraph from "./views/components/CreateGraph";
-import YourGraphs from "./views/components/YourGraphs";
+import CreateGraph from "./views/core/CreateGraph";
+import YourGraphs from "./views/core/YourGraphs";
 
-import Account from "./views/components/Account";
-import AccountSettings from "./views/components/AccountSettings";
+import Account from "./views/core/Account";
+import AccountSettings from "./views/core/AccountSettings";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './tailwind.css';
