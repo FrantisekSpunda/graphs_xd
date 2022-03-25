@@ -11,7 +11,7 @@ function Header() {
                 <NavLink to='account' className={({isActive}) => isActive && 'underline'}><span className='text-sm font-medium'>matej.opicka</span></NavLink>
             </ul>
         </header>
-    );
+    )
   }
   
   export default Header;
