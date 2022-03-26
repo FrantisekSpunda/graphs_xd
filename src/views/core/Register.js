@@ -30,7 +30,7 @@ function Register () {
                 </Input>
                 <Input name='password_again' type='password' placeholder='Password again' >
                     <Link to='/your-graphs'>
-                        <img type='submit' src={submit} className='cursor-pointer w-12 absolute top-1/2 right-3 translate-y-[-50%]' alt="arrow right" />
+                        <img type='submit' src={submit} className='cursor-pointer w-12 absolute top-3/4 right-3 translate-y-[-50%]' alt="arrow right" />
                     </Link>
                 </Input>
                 </>

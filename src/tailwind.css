@@ -499,6 +499,10 @@ html {
   right: 0.75rem;
 }
 
+.top-3\/4 {
+  top: 75%;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
