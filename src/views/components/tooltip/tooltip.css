@@ -1,0 +1,18 @@
+.tooltip {
+	position: absolute;
+	top: 50%;
+	left: calc(100% + 1rem);
+	transform: translateY(-50%);
+}
+
+.tooltip::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: -0.2rem;
+	transform: translateY(-50%) rotate(45deg);
+	background-color: #575757;
+	width: 7px;
+	height: 7px;
+}

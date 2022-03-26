@@ -495,6 +495,42 @@ html {
   top: 75%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-\[-1rem\] {
+  right: -1rem;
+}
+
+.left-\[-1rep\] {
+  left: -1rep;
+}
+
+.left-\[-10rep\] {
+  left: -10rep;
+}
+
+.left-\[-8rem\] {
+  left: -8rem;
+}
+
+.right-\[-2rem\] {
+  right: -2rem;
+}
+
+.left-\[100\%-1rem\] {
+  left: 100% - 1rem;
+}
+
+.left-\[calc\(100\%\+1rem\)\] {
+  left: calc(100% + 1rem);
+}
+
 .m-3 {
   margin: 0.75rem;
 }
@@ -689,6 +725,12 @@ html {
   width: 2.5rem;
 }
 
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -783,12 +825,21 @@ html {
   background-color: rgb(196 196 196 / var(--tw-bg-opacity));
 }
 
+.bg-grey-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 87 87 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-12 {
   padding: 3rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-2 {
@@ -804,6 +855,21 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pt-24 {
@@ -833,6 +899,11 @@ html {
 .text-orange-300 {
   --tw-text-opacity: 1;
   color: rgb(255 191 117 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .outline-none {
