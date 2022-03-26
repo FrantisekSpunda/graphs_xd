@@ -8,9 +8,9 @@ function Navbar() {
     const navLinkClass = 'font-semibold text-sm '
 
     return (
-        <nav className="w-full h-18 px-6 py-4 border-grey-100 border-b flex justify-between items-center">
+        <nav id='Navbar' className="w-full h-16 px-6 py-4 border-grey-100 border-b flex justify-between items-center">
             <img src={logo} alt="logo" className='h-full' />
-            <ul className='flex justify-between w-1/3 items-center'>
+            <ul className='flex justify-between w-1/4 items-center'>
                 <NavLink to='register' className={({isActive}) => isActive ? navLinkClass + 'border-b border-gray-300' : navLinkClass}>Register</NavLink>
                 <NavLink to='login' className={({isActive}) => isActive ? 'border-b border-gray-300' : navLinkClass}>Login</NavLink>
                 <div className='h-full flex justify-between items-center w-48'>

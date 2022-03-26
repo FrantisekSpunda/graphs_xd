@@ -27,7 +27,7 @@ module.exports = {
         300: '#C4C4C4',
         900: '#575757'
       },
-      orage: {
+      orange: {
         300: '#FFBF75',
         500: '#FFA24B',
         900: '#D7562E'

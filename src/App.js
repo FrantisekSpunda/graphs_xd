@@ -1,4 +1,5 @@
 import Navbar from "./views/core/Navbar";
+import Sidebar from "./views/core/Sidebar";
 
 import Login from "./views/core/Login";
 import Register from "./views/core/Register";
@@ -27,6 +28,8 @@ const App = () => (
 const UserContainer = () => (
   <>
   <Navbar />
+  <div className="content flex w-full h-[calc(100vh-4rem)]">
+    <Sidebar />
     <Routes>
       <Route path="create-graph" element={<CreateGraph />} />
       <Route path="your-graphs" element={<YourGraphs />} />
@@ -34,6 +37,7 @@ const UserContainer = () => (
       <Route path="account" element={<Account />} />
       <Route path="account-settings" element={<AccountSettings />} />
     </Routes>
+  </div>
   </>
 )
 
