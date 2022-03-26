@@ -6,7 +6,7 @@ import tailwindLogo from './tailwind_logo.svg';
 const Technologies = () => {
 	return (
 		<>
-			<h2 className='mt-24'>Technologies</h2>
+			<h2 className='mt-24 font-bold'>Technologies</h2>
 			<ul className='w-full flex gap-16 justify-center mt-4'>
 				<li className='bg-grey-100 rounded-full w-16 h-16 flex justify-center items-center'>
 					<img src={reactLogo} className='w-8' alt='' />
