@@ -1,5 +1,5 @@
 import Navbar from "./views/core/Navbar";
-import Sidebar from "./views/core/Sidebar";
+import Sidebar from "./views/core/sidebar/Sidebar";
 
 import Login from "./views/core/Login";
 import Register from "./views/core/Register";
@@ -28,7 +28,7 @@ const App = () => (
 const UserContainer = () => (
   <>
   <Navbar />
-  <div className="content flex w-full h-[calc(100vh-4rem)]">
+  <div className="content flex w-full h-[calc(100vh-5rem)]">
     <Sidebar />
     <Routes>
       <Route path="create-graph" element={<CreateGraph />} />

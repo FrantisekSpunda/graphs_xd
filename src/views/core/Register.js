@@ -36,6 +36,9 @@ function Register () {
                 </>
                 }
             </form>
+            <ul className="w-full h-full border border-black flex justify center">
+                
+            </ul>
         </div>
     )
 }
