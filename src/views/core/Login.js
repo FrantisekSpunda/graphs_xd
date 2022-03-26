@@ -24,7 +24,7 @@ const Login = () => {
                 { showInput &&
                 <Input name='password' type='password' placeholder='Password' >
                     <Link to='/register'>
-                        <img type='submit' src={submit} className='cursor-pointer w-12 absolute m-4 right-0' alt="arrow right" />
+                        <img type='submit' src={submit} className='cursor-pointer w-12 absolute top-1/2 right-3 translate-y-[-50%]' alt="arrow right" />
                     </Link>
                 </Input>
                 }
