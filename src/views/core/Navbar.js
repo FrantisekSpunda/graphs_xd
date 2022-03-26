@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-import logo from '../../assets/images/logo-256.png';
-import profileImage from '../../assets/images/profile/alex-profile-image.png'
-import arrowDown from '../../assets/images/arrow2-down.png'
+import logo from 'assets/images/icons/logo-256.png';
+import profileImage from 'assets/images/profile/alex-profile-image.png'
+import arrowDown from 'assets/images/icons/arrow2-down.png'
 
 function Navbar() {
     return (

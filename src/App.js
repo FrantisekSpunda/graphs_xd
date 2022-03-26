@@ -1,17 +1,14 @@
-import Navbar from "./views/core/Navbar";
-import Sidebar from "./views/core/sidebar/Sidebar";
-
-import Login from "./views/core/Login";
-import Register from "./views/core/Register";
-
-import CreateGraph from "./views/core/CreateGraph";
-import YourGraphs from "./views/core/YourGraphs";
-
-import Account from "./views/core/Account";
-import AccountSettings from "./views/core/AccountSettings";
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './tailwind.css';
+
+import Navbar from "views/core/Navbar";
+import Sidebar from "views/core/sidebar/Sidebar";
+import Login from "views/core/auth/login/Login";
+import Register from "views/core/auth/register/Register";
+import CreateGraph from "views/core/CreateGraph";
+import YourGraphs from "views/core/YourGraphs";
+import Account from "views/core/Account";
+import AccountSettings from "views/core/AccountSettings";
+
 
 const App = () => (
     <Router>
