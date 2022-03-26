@@ -20,7 +20,7 @@ const Login = () => {
 							setShowInput(!showInput);
 						}}
 						src={arrowRight}
-						className='cursor-pointer w-4 absolute m-3 right-0'
+						className='cursor-pointer w-4 absolute m-3 right-0 transition-transform hover:translate-x-1'
 						alt='arrow right'
 					/>
 				</Input>
@@ -28,7 +28,12 @@ const Login = () => {
 				{showInput && (
 					<Input name='password' type='password' placeholder='Password'>
 						<Link to='/register'>
-							<img type='submit' src={submit} className='cursor-pointer w-12 absolute top-1/2 right-3 translate-y-[-50%]' alt='arrow right' />
+							<img
+								type='submit'
+								src={submit}
+								className='cursor-pointer w-12 absolute top-1/2 right-3 translate-y-[-50%] transition-transform hover:scale-110'
+								alt='arrow right'
+							/>
 						</Link>
 					</Input>
 				)}

@@ -21,7 +21,7 @@ function Register() {
 							setShowInput(!showInput);
 						}}
 						src={arrowRight}
-						className='cursor-pointer w-4 absolute m-3 right-0'
+						className='cursor-pointer w-4 absolute m-3 right-0 transition-transform hover:translate-x-1'
 						alt='arrow right'
 					/>
 				</Input>
@@ -31,7 +31,12 @@ function Register() {
 						<Input name='password' type='password' placeholder='Password' className={'mb-2'}></Input>
 						<Input name='password_again' type='password' placeholder='Password again'>
 							<Link to='/your-graphs'>
-								<img type='submit' src={submit} className='cursor-pointer w-12 absolute top-3/4 right-3 translate-y-[-50%]' alt='arrow right' />
+								<img
+									type='submit'
+									src={submit}
+									className='cursor-pointer w-12 absolute top-3/4 right-3 translate-y-[-50%] transition-transform hover:scale-110'
+									alt='arrow right'
+								/>
 							</Link>
 						</Input>
 					</>
