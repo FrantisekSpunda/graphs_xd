@@ -10,33 +10,33 @@ const Technologies = () => {
 		<>
 			<h2 className='font-bold mt-[30vh]'>Technologies</h2>
 			<ul className='w-full flex gap-16 justify-center mt-8'>
-				<Tooltip text={'React.js'} event='hover'>
+				<Tooltip text={'React.js'} event='hover' direction='bottom'>
 					<a href='https://reactjs.org/'>
 						<li className='bg-grey-100 rounded-full w-16 h-16 flex justify-center items-center transition-transform hover:scale-110 cursor-pointer'>
-							<img src={reactLogo} className='w-8' alt='' />
+							<img src={reactLogo} className='w-8' alt='react logo' />
 						</li>
 					</a>
 				</Tooltip>
-				<Tooltip text={'Node.js'} event='hover'>
+				<Tooltip text={'Node.js'} event='hover' direction='bottom'>
 					<a href='https://nodejs.org/en/'>
 						<li className='bg-grey-100 rounded-full w-16 h-16 flex justify-center items-center transition-transform hover:scale-110 cursor-pointer'>
-							<img src={nodejsLogo} className='w-10' alt='' />
+							<img src={nodejsLogo} className='w-10' alt='nodejs logo' />
 						</li>
 					</a>
 				</Tooltip>
 
-				<Tooltip text={'Chart.js'} event='hover'>
+				<Tooltip text={'Chart.js'} event='hover' direction='bottom'>
 					<a href='https://www.chartjs.org/'>
 						<li className='bg-grey-100 rounded-full w-16 h-16 flex justify-center items-center transition-transform hover:scale-110 cursor-pointer'>
-							<img src={chartjsLogo} className='w-10' alt='' />
+							<img src={chartjsLogo} className='w-10' alt='chartjs logo' />
 						</li>
 					</a>
 				</Tooltip>
 
-				<Tooltip text={'Tailwind'} event='hover'>
+				<Tooltip text={'Tailwind'} event='hover' direction='bottom'>
 					<a href='https://tailwindcss.com/'>
 						<li className='bg-grey-100 rounded-full w-16 h-16 flex justify-center items-center transition-transform hover:scale-110 cursor-pointer'>
-							<img src={tailwindLogo} className='w-8' alt='' />
+							<img src={tailwindLogo} className='w-8' alt='tailwind logo' />
 						</li>
 					</a>
 				</Tooltip>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import './tooltip.css';
+import './collapse.css';
 
-const Tooltip = ({ text, children, className, event, direction }) => {
+const Collapse = ({ header, children, event, className }) => {
 	const [show, setShow] = useState(false);
 
 	let events;
@@ -22,13 +22,13 @@ const Tooltip = ({ text, children, className, event, direction }) => {
 	}
 
 	return (
-		<div className={`relative ${className}`} {...events}>
-			{children}
-			<div className={`tooltip${'-' + direction} px-3 py-1 text-xs w-fit rounded-md bg-grey-900 text-white ${!show && 'hidden'}`}>
-				<p>{text}</p>
+		<div className={`collapse ${className}`} {...events}>
+			{header}
+			<div className='transition-[height] duration-500 overflow-hidden' style={show ? { height: '100px' } : { height: '0' }}>
+				{children}
 			</div>
 		</div>
 	);
 };
 
-export default Tooltip;
+export default Collapse;
