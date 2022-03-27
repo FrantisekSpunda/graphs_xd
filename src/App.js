@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from 'views/core/Navbar';
-import Sidebar from 'views/core/sidebar/Sidebar';
-import Login from 'views/core/auth/login/Login';
-import Register from 'views/core/auth/register/Register';
-import CreateGraph from 'views/core/CreateGraph';
-import YourGraphs from 'views/core/YourGraphs';
-import Account from 'views/core/Account';
-import AccountSettings from 'views/core/AccountSettings';
+import Navbar from 'views/Navbar';
+import Sidebar from 'views/sidebar/Sidebar';
+import Login from 'views/auth/login/Login';
+import Register from 'views/auth/register/Register';
+import CreateGraph from 'views/CreateGraph';
+import YourGraphs from 'views/YourGraphs';
+import Account from 'views/Account';
+import AccountSettings from 'views/AccountSettings';
 
 const App = () => (
 	<Router>

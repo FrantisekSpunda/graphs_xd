@@ -1,9 +1,9 @@
-import Tooltip from 'views/components/tooltip/Tooltip';
+import Tooltip from 'components/tooltip/Tooltip';
 
-import reactLogo from './react_logo.svg';
-import nodejsLogo from './nodejs_logo.svg';
-import chartjsLogo from './chartjs_logo.svg';
-import tailwindLogo from './tailwind_logo.svg';
+import reactLogo from 'assets/images/react_logo.svg';
+import nodejsLogo from 'assets/images/nodejs_logo.svg';
+import chartjsLogo from 'assets/images/chartjs_logo.svg';
+import tailwindLogo from 'assets/images/tailwind_logo.svg';
 
 const Technologies = () => {
 	return (

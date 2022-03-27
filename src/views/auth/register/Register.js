@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Base from '../Base';
-import Input from 'views/components/Input';
+import Input from 'components/Input';
 
 import arrowRight from 'assets/images/icons/arrow-right.png';
-import register from './register.png';
+import register from 'assets/images/register.png';
 import submit from 'assets/images/icons/submit.png';
 
 function Register() {

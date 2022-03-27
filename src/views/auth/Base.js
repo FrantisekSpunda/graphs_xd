@@ -1,6 +1,6 @@
 import Technologies from './Technologies';
 
-import logo from './logo-512.png';
+import logo from 'assets/images/logo-512.png';
 
 const Base = ({ children, heading }) => {
 	return (

@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Base from '../Base';
-import Input from 'views/components/Input';
+import Input from 'components/Input';
 
-import login from './login.png';
+import login from 'assets/images/login.png';
 import arrowRight from 'assets/images/icons/arrow-right.png';
 import submit from 'assets/images/icons/submit.png';
 
