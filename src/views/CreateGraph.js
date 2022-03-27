@@ -3,7 +3,16 @@ import Collapse from 'components/collapse/Collapse';
 function CreateGraph() {
 	return (
 		<div className='p-4'>
-			<Collapse header={<h1>Collapse panel</h1>} direction='bottom' className='border border-grey-300' event='hover'>
+			<Collapse
+				show={false}
+				header={
+					<>
+						<h1>Collapse panel</h1>
+						<button onClick={() => (this.show = true)}>pepa</button>
+					</>
+				}
+				className='border border-grey-300'
+			>
 				<div>
 					Content of callapse
 					<ul>
