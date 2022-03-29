@@ -4,8 +4,6 @@ import barChart from 'assets/images/charts/bar.png';
 import ringChart from 'assets/images/charts/ring.png';
 
 function CreateGraph() {
-	const [showCollapse, setShowCollapse] = useState(false);
-
 	return (
 		<div className='w-full h-full px-10 py-6 relative'>
 			<h2 className='text-lg font-semibold mb-5'>New graph</h2>
