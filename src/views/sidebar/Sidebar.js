@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
 	return (
-		<nav id='Sidebar' className='h-full w-64 p-12 relative'>
+		<menu id='Sidebar' className='h-full w-64 p-12 relative'>
 			<h3 className='sidebar__h3 relative w-min text-orange-300 font-semibold text-xs mb-6'>MENU</h3>
 			<ul className='sidebar__ul relative flex flex-col gap-8 mb-16'>
 				<NavLink to='create-graph' className='font-semibold'>
@@ -32,7 +32,7 @@ const Sidebar = () => {
 					Demo
 				</NavLink>
 			</ul>
-		</nav>
+		</menu>
 	);
 };
 

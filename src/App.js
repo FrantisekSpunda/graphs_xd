@@ -24,7 +24,7 @@ const App = () => (
 const UserContainer = () => (
 	<>
 		<Navbar />
-		<div className='content flex w-full h-[calc(100vh-5rem)]'>
+		<div className='flex w-full h-[calc(100vh-5rem)]'>
 			<Sidebar />
 			<Routes>
 				<Route path='create-graph' element={<CreateGraph />} />
