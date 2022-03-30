@@ -1,5 +1,5 @@
-const Step2 = () => {
-	return <h1>step2</h1>;
+const Step2 = ({ onAdd }) => {
+	return <h1 onClick={() => onAdd()}>step2</h1>;
 };
 
 export default Step2;
