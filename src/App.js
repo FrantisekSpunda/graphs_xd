@@ -4,7 +4,7 @@ import Navbar from 'views/Navbar';
 import Sidebar from 'views/sidebar/Sidebar';
 import Login from 'views/auth/login/Login';
 import Register from 'views/auth/register/Register';
-import CreateGraph from 'views/CreateGraph';
+import CreateGraph from 'views/create-graph/CreateGraph';
 import YourGraphs from 'views/YourGraphs';
 import Account from 'views/Account';
 import AccountSettings from 'views/AccountSettings';
@@ -27,7 +27,7 @@ const UserContainer = () => (
 		<div className='flex w-full h-[calc(100vh-5rem)]'>
 			<Sidebar />
 			<Routes>
-				<Route path='create-graph' element={<CreateGraph />} />
+				<Route path='create-graph/*' element={<CreateGraph />} />
 				<Route path='your-graphs' element={<YourGraphs />} />
 
 				<Route path='account' element={<Account />} />
