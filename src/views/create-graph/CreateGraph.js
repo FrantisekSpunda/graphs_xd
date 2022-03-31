@@ -1,9 +1,13 @@
+import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Step1 from './step1/Step1';
-import Step2 from './Step2';
+import Step2 from './step2/Step2';
 import Step3 from './Step3';
+import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 
 const CreateGraph = () => {
+	const navigate = useNavigate();
+	const location = useLocation();
 	const [step, setStep] = useState(1);
 	const [graphs, setGraphs] = useState([
 		{
@@ -26,8 +30,11 @@ const CreateGraph = () => {
 
 	const addToGraph = (graph) => {
 		setNewGraph({ ...newGraph, ...graph });
-		setStep(step + 1);
+
+		navigate(`step-${step + 1}`);
+		setStep(parseInt(location.pathname.slice(-1)));
 	};
+	console.log(parseInt(location.pathname.slice(-1)));
 
 	return (
 		<div className='w-full h-full px-10 py-6 relative'>
@@ -35,38 +42,97 @@ const CreateGraph = () => {
 				<div className='rounded-full w-6 h-6 flex justify-center items-center font-semibold text-white transition-[background-color] duration-500 bg-orange-300'>
 					1
 				</div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step >= 2 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
 				<div
-					className={`rounded-full w-6 h-6 bg-grey-300 flex justify-center items-center font-semibold text-white transition-[background-color] duration-500 ${
-						step >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`rounded-full w-6 h-6 flex justify-center items-center font-semibold text-white transition-[background-color] duration-500 ${
+						location.pathname.slice(-1) >= 2 ? 'bg-orange-300' : 'bg-grey-300'
 					}`}
 				>
 					2
 				</div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
-				<div className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${step === 3 ? 'bg-orange-300' : 'bg-grey-300'}`}></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
+				<div
+					className={`w-0.5 h-0.5 rounded-full transition-[background-color] duration-500 ${
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
+					}`}
+				></div>
 				<div
 					className={`rounded-full w-6 h-6 flex justify-center items-center font-semibold text-white transition-[background-color] duration-500 ${
-						step === 3 ? 'bg-orange-300' : 'bg-grey-300'
+						parseInt(location.pathname.slice(-1)) === 3 ? 'bg-orange-300' : 'bg-grey-300'
 					}`}
 				>
 					3
 				</div>
 			</div>
-			{step === 1 && <Step1 onAdd={addToGraph} />}
-			{step === 2 && <Step2 onAdd={addToGraph} />}
-			{step === 3 && <Step3 onAdd={addToGraph} />}
+			<Routes>
+				<Route exact path='/' element={<Navigate to='step-1' />} />
+				<Route path='step-1' element={<Step1 onAdd={addToGraph} />} />
+				<Route path='/step-2' element={<Step2 onAdd={addToGraph} newGraph={newGraph} />} />
+				<Route path='/step-3' element={<Step3 onAdd={addToGraph} />} />
+			</Routes>
 		</div>
 	);
 };

@@ -1,9 +1,10 @@
 import Collapse from 'components/collapse/Collapse';
 import Input from 'components/Input';
+import DataInput from './DataInput';
 import arrow2Down from 'assets/images/icons/arrow2-down.png';
 import { useState } from 'react';
 
-const Step2 = ({ onAdd }) => {
+const Step2 = ({ onAdd, newGraph }) => {
 	const [showColl1, setShowColl1] = useState(true);
 	const [showColl2, setShowColl2] = useState(false);
 
@@ -20,26 +21,14 @@ const Step2 = ({ onAdd }) => {
 				<Collapse
 					header={
 						<div className='flex justify-between m-2'>
-							<h2>Basics</h2>
-							<img src={arrow2Down} className='w-5' alt='arrow down' onClick={() => setShowColl1(!showColl1)} />
+							<h2>Data</h2>
+							<img src={arrow2Down} className='w-5 cursor-pointer' alt='arrow down' onClick={() => setShowColl1(!showColl1)} />
 						</div>
 					}
 					className='w-full border-b border-grey-100'
 					show={showColl1}
 				>
-					<Input type='text' name='username' placeholder='Background color'></Input>
-					<Input type='text' name='username' placeholder='Width'></Input>
-				</Collapse>
-				<Collapse
-					header={
-						<div className='flex justify-between m-2'>
-							<h2>Data</h2>
-							<img src={arrow2Down} className='w-5' alt='arrow down' onClick={() => setShowColl2(!showColl2)} />
-						</div>
-					}
-					className='w-full border-b border-grey-100'
-					show={showColl2}
-				>
+					<DataInput></DataInput>
 					<Input type='text' name='username' placeholder='Data'></Input>
 					<Input type='text' name='username' placeholder='Data'></Input>
 				</Collapse>
