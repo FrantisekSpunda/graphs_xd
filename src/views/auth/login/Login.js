@@ -14,7 +14,7 @@ const Login = () => {
 	return (
 		<Base heading={login}>
 			<form action='' className='w-1/2 relative'>
-				<Input type='text' name='username' placeholder='Username' className={showInput ? 'hidden' : ''}>
+				<Input type='text' name='username' placeholder='Username' className={showInput ? 'hidden' : ''} classNameInput='font-semibold border-0 bg-grey-100'>
 					<img
 						onClick={() => {
 							setShowInput(!showInput);
@@ -26,7 +26,7 @@ const Login = () => {
 				</Input>
 
 				{showInput && (
-					<Input name='password' type='password' placeholder='Password'>
+					<Input name='password' type='password' placeholder='Password' classNameInput='font-semibold border-0 bg-grey-100'>
 						<Link to='/register'>
 							<img
 								type='submit'

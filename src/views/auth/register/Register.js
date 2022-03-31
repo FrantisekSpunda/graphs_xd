@@ -14,8 +14,14 @@ function Register() {
 	return (
 		<Base heading={register}>
 			<form action='' className='w-1/2 relative'>
-				<Input type='text' name='username' placeholder='Username' className={`mb-2 ${showInput ? 'hidden' : ''}`}></Input>
-				<Input type='email' name='email' placeholder='Email' className={showInput ? 'hidden' : ''}>
+				<Input
+					type='text'
+					name='username'
+					placeholder='Username'
+					className={`mb-2 ${showInput ? 'hidden' : ''}`}
+					classNameInput='font-semibold border-0 bg-grey-100'
+				></Input>
+				<Input type='email' name='email' placeholder='Email' className={showInput ? 'hidden' : ''} classNameInput='font-semibold border-0 bg-grey-100'>
 					<img
 						onClick={() => {
 							setShowInput(!showInput);
@@ -28,8 +34,8 @@ function Register() {
 
 				{showInput && (
 					<>
-						<Input name='password' type='password' placeholder='Password' className={'mb-2'}></Input>
-						<Input name='password_again' type='password' placeholder='Password again'>
+						<Input name='password' type='password' placeholder='Password' className={'mb-2'} classNameInput='font-semibold border-0 bg-grey-100'></Input>
+						<Input name='password_again' type='password' placeholder='Password again' classNameInput='font-semibold border-0 bg-grey-100'>
 							<Link to='/your-graphs'>
 								<img
 									type='submit'

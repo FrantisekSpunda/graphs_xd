@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import Anime from 'react-anime';
 
-const Input = ({ type, name, className, placeholder, children }) => {
+const Input = ({ type, name, className, placeholder, children, classNameInput }) => {
 	return (
 		<div className={className}>
 			<Anime duration='1000' easing='easeOutQuart' opacity={['0', '1']} width={['0', '100%']}>
 				<>
 					{children}
 					<input
-						className='font-sans font-semibold text-sm p-2 rounded-md border-0 bg-grey-100 outline-none w-full text-gray-900'
+						className={`font-sans text-sm p-2 rounded-md outline-none w-full text-gray-900 ${classNameInput}`}
 						type={type}
 						name={name}
 						placeholder={placeholder}
