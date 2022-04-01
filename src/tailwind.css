@@ -512,6 +512,11 @@ html {
   margin-right: auto;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -546,6 +551,10 @@ html {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .flex {
@@ -594,6 +603,34 @@ html {
 
 .h-56 {
   height: 14rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[calc\(100vh\)\] {
+  height: calc(100vh);
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-\[79vh\] {
+  height: 79vh;
+}
+
+.h-\[78vh\] {
+  height: 78vh;
 }
 
 .w-full {
@@ -705,6 +742,10 @@ html {
   cursor: pointer;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -745,8 +786,24 @@ html {
   gap: 0.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-64 {
+  gap: 16rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-md {

@@ -2,8 +2,8 @@ import Input from 'components/Input';
 import Tooltip from 'components/tooltip/Tooltip';
 import { useState } from 'react';
 
-const DataInput = () => {
-	const [inputs, setInputs] = useState(11);
+const DataInput = ({ times, data, onChange }) => {
+	const [inputs, setInputs] = useState(times);
 
 	return (
 		<>
@@ -21,7 +21,13 @@ const DataInput = () => {
 			</div>
 			<div className='flex gap-4 w-full flex-wrap'>
 				{[...Array(inputs).keys()].map((key) => (
-					<Input key={key} name='pepik' classNameInput='w-24 text-center rounded-md border border-grey-100' placeholder={key}></Input>
+					<Input
+						key={key}
+						name='pepik'
+						classNameInput='w-24 text-center rounded-md border border-grey-100'
+						value={data ? data[key] : key}
+						onChange={onChange}
+					></Input>
 				))}
 			</div>
 		</>
