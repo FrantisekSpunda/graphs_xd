@@ -7,11 +7,6 @@ const DataInput = () => {
 
 	return (
 		<>
-			<div className='flex gap-4 w-full flex-wrap'>
-				{[...Array(inputs).keys()].map((key) => (
-					<Input key={key} name='pepik' classNameInput='w-24 text-center rounded-md border border-grey-100' placeholder={key}></Input>
-				))}
-			</div>
 			<div className='flex gap-2'>
 				<Tooltip className='w-4' text={'Add field'} event='hover' direction='right'>
 					<button className='text-2xl font-semibold' onClick={() => setInputs(inputs + 1)}>
@@ -23,6 +18,11 @@ const DataInput = () => {
 						-
 					</button>
 				</Tooltip>
+			</div>
+			<div className='flex gap-4 w-full flex-wrap'>
+				{[...Array(inputs).keys()].map((key) => (
+					<Input key={key} name='pepik' classNameInput='w-24 text-center rounded-md border border-grey-100' placeholder={key}></Input>
+				))}
 			</div>
 		</>
 	);
