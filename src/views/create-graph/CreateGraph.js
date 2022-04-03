@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Step1 from './step1/Step1';
 import Step2 from './step2/Step2';
 import Step3 from './Step3';
-import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 
 const CreateGraph = () => {
 	const navigate = useNavigate();
