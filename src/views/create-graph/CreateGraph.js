@@ -34,7 +34,6 @@ const CreateGraph = () => {
 		navigate(`step-${step + 1}`);
 		setStep(parseInt(location.pathname.slice(-1)));
 	};
-	console.log(parseInt(location.pathname.slice(-1)));
 
 	return (
 		<div className='w-full h-full px-10 py-6 relative'>
@@ -130,7 +129,18 @@ const CreateGraph = () => {
 			<Routes>
 				<Route exact path='/' element={<Navigate to='step-1' />} />
 				<Route path='step-1' element={<Step1 onAdd={addToGraph} />} />
-				<Route path='/step-2' element={<Step2 onAdd={addToGraph} newGraph={newGraph} />} />
+				<Route
+					path='/step-2'
+					element={
+						<div>
+							<h2 className='text-lg font-semibold mb-5'>New graph</h2>
+							<h2 className='text-lg font-semibold text-orange-500 text-center mb-8'>Add data and styling</h2>
+							<div className='flex flex-row gap-12'>
+								<Step2 onAdd={addToGraph} newGraph={newGraph} />
+							</div>
+						</div>
+					}
+				/>
 				<Route path='/step-3' element={<Step3 onAdd={addToGraph} />} />
 			</Routes>
 		</div>
