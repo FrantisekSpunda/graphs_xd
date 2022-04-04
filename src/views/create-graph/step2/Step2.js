@@ -2,7 +2,7 @@ import Collapse from 'components/collapse/Collapse';
 import Input from 'components/Input';
 import DataInput from './DataInput';
 import arrow2Down from 'assets/images/icons/arrow2-down.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar, Chart } from 'react-chartjs-2';
 
@@ -20,18 +20,29 @@ const Step2 = ({ onAdd, newGraph }) => {
 	const [labels, setLabels] = useState([...Array(defInputs).keys()]);
 	const [data, setData] = useState([...Array(defInputs).keys()]);
 	const [inputs, setInputs] = useState(defInputs);
+	const [legend, setLegend] = useState('Legend');
 
 	const setOnIndex = (e, array, setArray) => {
 		try {
 			const returnArray = array.map((value, index) => (index === parseInt(e.target.name) ? e.target.value : value));
 			parseInt(e.target.name) > array.length - 1 && returnArray.push(e.target.value);
-			inputs < array.length ? setArray(array.slice(0, inputs - array.length)) : setInputs(array.push(inputs));
-		} catch {
-			// setInputs(inputs);
+			setArray(returnArray);
 			console.log(inputs);
-			// inputs < array.length ? setArray(array.slice(0, inputs - array.length)) : setInputs(array.push(inputs));
+			// inputs < array.length ? setArray(array.slice(0, inputs - array.length)) : setArray(array.push(inputs));
+		} catch {
+			console.log(inputs);
+			// setInputs(inputs);
+			// console.log(inputs);
+			// inputs < array.length && setArray(array.slice(0, inputs - array.length));
+			// inputs > array.length && setArray(array.push(inputs));
 		}
 	};
+
+	// useEffect(() => {
+	// console.log(inputs - data.length);
+	// inputs < array.length && setArray(array.slice(0, inputs - array.length));
+	// inputs > array.length && setInputs(array.push(inputs));
+	// });
 
 	const optionsChart = {
 		responsive: true,

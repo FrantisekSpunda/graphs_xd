@@ -15,7 +15,7 @@ const DataInput = (props) => {
 						onClick={() => {
 							setInputs(inputs + 1);
 							props.sendInputs(inputs + 1);
-							props.onChange();
+							props.onChange(+1);
 						}}
 					>
 						+
@@ -27,7 +27,7 @@ const DataInput = (props) => {
 						onClick={() => {
 							setInputs(inputs - 1);
 							props.sendInputs(inputs - 1);
-							props.onChange();
+							props.onChange(-1);
 						}}
 					>
 						-
